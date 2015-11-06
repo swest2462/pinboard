@@ -2,10 +2,10 @@
 %html
 %head
   %title Pin Board
-
   = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
-  = javascript_include_tag 'application', 'data-turbolinks-track'=> true
+  = javascript_include_tag 'application', 'data-turbolinks-track' => true
   = csrf_meta_tags
+
 %body
   %nav.navbar.navbar-default
     .container
@@ -16,7 +16,6 @@
           %li= link_to "New Pin", new_pin_path
           %li= link_to "Account", edit_user_registration_path
           %li= link_to "Sign Out", destroy_user_session_path, method: :delete
-
       - else
         %ul.nav.navbar-nav.navbar-right
           %li= link_to "Sign Up", new_user_registration_path
