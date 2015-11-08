@@ -16,7 +16,7 @@ gem 'bootstrap-sass'
 gem 'simple_form'
 gem 'devise'
 gem 'paperclip', :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523bd46c768226893f23889079a7aa9c73b57d68'
-gem 'aws-sdk'
+gem 'aws-sdk', '~> 2'
 gem 'masonry-rails', '~> 0.2.4'
 gem 'acts_as_votable', '~> 0.10.0'
 group :development, :test do
